@@ -1,0 +1,19 @@
+.swiper-box {
+  height: 200px;
+}
+
+.swiper-item {
+  /* #ifndef APP-NVUE */
+  display: flex;
+  /* #endif */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #999;
+  color: #fff;
+}
+
+.image {
+  width: 750rpx;
+  height: 200px;
+}

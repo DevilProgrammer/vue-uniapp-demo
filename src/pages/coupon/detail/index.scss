@@ -1,0 +1,65 @@
+@import "../../../uni";
+
+@mixin basic-style{
+  font-size: $uni-font-size-sm;
+  color: $uni-text-color-grey;
+}
+
+
+.coupon{
+  padding: $uni-spacing-col-lg $uni-spacing-row-base;
+  width: 100%;
+}
+
+.section{
+  background-color: $uni-bg-color;
+  padding: $uni-spacing-row-sm;
+  width: 100%;
+  margin-bottom: $uni-spacing-row-base;
+}
+
+.valid-period{
+  @include basic-style;
+}
+
+.unclaimed-amount{
+  @include basic-style;
+  margin-bottom: $uni-spacing-row-base;
+}
+
+.stores{
+  font-size: $uni-font-size-sm;
+}
+
+.container{
+  display: flex;
+
+  .left{
+    width: 70%;
+  }
+
+  .right{
+    width: 30%;
+    align-self: center;
+
+    .coupon-action{
+      width:$uni-button-width-base * 1.5;
+      height: $uni-button-width-base * 0.6;
+      background-color: $uni-color-primary;
+      border-radius: $uni-border-radius-lg * 4;
+      color: $uni-text-color-inverse;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $uni-font-size-sm;
+      &::after{
+        border-radius: $uni-border-radius-lg * 8;
+      }
+    }
+
+    .disabled{
+      font-size: 100px;
+      background-color: $uni-bg-color-grey;
+    }
+  }
+}

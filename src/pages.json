@@ -1,0 +1,93 @@
+{
+	"easycom": {
+        "autoscan": true,
+        "custom": {
+            // uni-ui 规则如下配置
+            "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+        }
+    },
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "交广97.2车友惠"
+			}
+		},{
+			"path": "pages/shop-vip/index",
+			"style": {
+				"navigationBarTitleText": "特约商家"
+			}
+		},{
+			"path": "pages/shop/index",
+			"style": {
+				"navigationBarTitleText": "合作车店"
+			}
+		}, {
+			"path": "pages/shop/detail/index",
+			"style": {
+				"navigationBarTitleText": "车店地图地址"
+			}
+		},{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/coupon/detail/index",
+			"style": {
+				"navigationBarTitleText": "优惠券详情"
+			}
+		},
+		{
+			"path": "pages/me/my-coupons/index",
+			"style": {
+				"navigationBarTitleText": "我的优惠券列表"
+			}
+		},
+		{
+			"path": "pages/me/my-coupons/detail/index",
+			"style": {
+				"navigationBarTitleText": "我的优惠券详情"
+			}
+		},
+		{
+			"path": "pages/me/my-coupons/coupon-qrcode/index",
+			"style": {
+				"navigationBarTitleText": "优惠券码"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#34495e",
+		"selectedColor": "#3498db",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/index",
+			"text": "首页",
+			"iconPath": "static/images/tabbar/home.png",
+			"selectedIconPath": "static/images/tabbar/home_hl.png"
+		}, {
+			"pagePath": "pages/shop-vip/index",
+			"text": "特约商家",
+			"iconPath": "static/images/tabbar/shopvip.png",
+			"selectedIconPath": "static/images/tabbar/shopvip_hl.png"
+		},{
+			"pagePath": "pages/shop/index",
+			"text": "合作车店",
+			"iconPath": "static/images/tabbar/vehivles.png",
+			"selectedIconPath": "static/images/tabbar/vehivles_hl.png"
+		},{
+			"pagePath": "pages/me/index",
+			"text": "我的",
+			"iconPath": "static/images/tabbar/user_center.png",
+			"selectedIconPath": "static/images/tabbar/user_center_hl.png"
+		}]
+	},
+
+	"globalStyle": {
+		"navigationBarTextStyle": "#ecf0f1",
+		"navigationBarBackgroundColor": "#2980b9",
+		"backgroundColor": "#fbf9fe"
+	}
+}

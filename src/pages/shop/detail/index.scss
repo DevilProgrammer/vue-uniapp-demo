@@ -1,0 +1,59 @@
+@import "../../../uni";
+
+
+@mixin section-style{
+  margin: 0 0;
+  padding: $uni-spacing-col-lg $uni-spacing-row-base;
+}
+
+.content{
+  .store-detail{
+    background: $uni-bg-color;
+    filter: drop-shadow(5px 5px 10px $uni-bg-color-grey);
+    @include section-style;
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+      width: 70%;
+      .title{
+        font-size: $uni-font-size-lg;
+        margin-bottom: $uni-spacing-row-lg;
+        font-weight: bold;
+      }
+
+      .business_interval{
+        font-size: $uni-font-size-sm;
+        color: $uni-text-color-grey;
+        margin-bottom: $uni-spacing-row-sm;
+      }
+
+      .address{
+        font-size: $uni-font-size-sm;
+        color: $uni-text-color-grey;
+
+        .distance{
+          margin-left: $uni-spacing-row-lg;
+        }
+      }
+    }
+
+    .right{
+      width: 20%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+  }
+
+  .available-coupons{
+    @include section-style;
+
+    .coupon-list{
+      width: inherit;
+    }
+  }
+
+}
+
+

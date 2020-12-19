@@ -1,0 +1,50 @@
+.tabs{
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0;
+  align-items: center;
+}
+.tab{
+  display: flex;
+  white-space: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 30rpx;
+  font-size: 16px;
+  z-index: 99;
+}
+.title{
+  text-align: center;
+}
+.tab-bar{
+  width: 750rpx;
+  height: 44px;
+}
+.tab-box{
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.float{
+  position: absolute;
+  bottom: 6px;
+
+  height: 20rpx;
+  border-radius: 10rpx;
+}
+.fill{
+  position: absolute;
+
+  height: 25px;
+  border-radius: 20rpx;
+}
+.hang{
+  bottom: 3px;
+  position: absolute;
+  border-radius: 10rpx;
+  height: 5px;
+}

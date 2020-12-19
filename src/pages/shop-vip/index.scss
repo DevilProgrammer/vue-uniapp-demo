@@ -1,0 +1,20 @@
+@import "../../uni";
+
+.content{
+  padding: $uni-spacing-col-lg $uni-spacing-row-base;
+
+  .image-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    .image{
+      width: $uni-img-size-lg * 2;
+      height: $uni-img-size-lg * 2;
+    }
+  }
+
+}
+
+

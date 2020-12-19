@@ -1,0 +1,16 @@
+@import "../../uni";
+
+
+.home-page{
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-view{
+  height: 100vh;
+}
+
+.coupon-list{
+  width: inherit;
+  padding: $uni-spacing-col-lg $uni-spacing-row-base $uni-spacing-col-sm $uni-spacing-row-base ;
+}

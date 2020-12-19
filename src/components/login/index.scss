@@ -1,0 +1,55 @@
+@import "../../uni";
+$confirm-color: #6495ED;
+$divider-color: #f5f5f5;
+
+.modal{
+  background-color: $uni-bg-color;
+  width: 600rpx;
+  border-radius: 20px;
+  padding-top: 40rpx;
+
+  .content{
+    text-align: center;
+    padding-bottom: $uni-spacing-col-lg;
+    font-size: $uni-font-size-base;
+    //color: $uni-text-color-grey;
+    border-bottom: 1rpx solid $divider-color;
+  }
+
+  .title{
+    text-align: center;
+    font-size: $uni-font-size-lg;
+    margin-bottom: $uni-spacing-col-base;
+  }
+
+  .action{
+    button{
+      background-color: transparent;
+      border: none;
+      &::after{
+        border: none;
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+    .navigator{
+      width: 50%;
+    }
+    .cancel{
+      padding: 15rpx 0;
+    }
+
+    .divider{
+      //height: 100%;
+      width: 1px;
+      background-color: $divider-color;
+
+    }
+
+    .confirm{
+      color: $confirm-color;
+      padding: 15rpx 0;
+    }
+  }
+}
+

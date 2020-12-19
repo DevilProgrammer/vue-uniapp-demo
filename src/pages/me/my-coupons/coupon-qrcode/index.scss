@@ -1,0 +1,94 @@
+@import "../../../../uni";
+
+@mixin basic-style{
+  font-size: $uni-font-size-sm;
+  color: $uni-text-color-grey;
+}
+
+
+.coupon{
+  padding: $uni-spacing-col-lg $uni-spacing-row-base;
+  width: 100%;
+}
+
+.section{
+  background-color: $uni-bg-color;
+  padding: $uni-spacing-row-sm;
+  width: 100%;
+  margin-bottom: $uni-spacing-row-base;
+  text-align: center;
+  //position: relative;
+
+}
+
+
+.title{
+  font-size: $uni-font-size-title;
+  font-weight: bold;
+}
+
+.valid-period{
+  @include basic-style;
+}
+
+.unclaimed-amount{
+  @include basic-style;
+  margin-bottom: $uni-spacing-row-base;
+}
+
+.stores{
+  font-size: $uni-font-size-sm;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.divider-view{
+  position: relative;
+  text-align: center;
+  padding: 0 5px;
+  margin: $uni-spacing-col-lg 0 $uni-spacing-col-lg * 1.5 0;
+  &::before{
+    content: '';
+    position: absolute;
+    width: $uni-img-size-sm;
+    height: $uni-img-size-sm;
+    background-color: $uni-page-bg-color;
+    border-radius: $uni-border-radius-circle;
+    z-index: 999;
+    top: -$uni-img-size-sm / 2;
+    left: -$uni-img-size-sm;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: $uni-img-size-sm;
+    height: $uni-img-size-sm;
+    background-color: $uni-page-bg-color;
+    border-radius: $uni-border-radius-circle;
+    z-index: 999;
+    top: -$uni-img-size-sm / 2;
+    right: -$uni-img-size-sm;
+  }
+}
+
+
+.divider{
+  position: relative;
+ height: 1PX;
+ width: 100%;
+ background-image: repeating-linear-gradient(to right, transparent 5% , $uni-text-color-grey 7%);
+}
+
+.qr-code-view{
+  display: flex;
+  justify-content: center;
+  margin-bottom: $uni-spacing-col-lg;
+  .qr-code{
+    width: 150px;
+    height: 150px;
+  }
+}

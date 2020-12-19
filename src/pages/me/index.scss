@@ -1,0 +1,21 @@
+@import "../../uni";
+
+.header{
+  background-color: $uni-bg-color;
+  margin-bottom: $uni-spacing-row-base;
+  display: flex;
+  align-items: center;
+  padding: $uni-spacing-row-lg;
+
+
+  .text{
+    font-size: $uni-font-size-lg;
+    margin-left: $uni-spacing-row-sm;
+  }
+
+  .image{
+    width: 60px;
+    height: 60px;
+    border-radius: $uni-border-radius-circle;
+  }
+}
